@@ -23,8 +23,11 @@ experiments repository to find out.
 - You should understand how encryption works and why it is needed.
 - You must set `KMS_KEY_ID` environment variable to point to an
 existing KMS KEY.
+- Install dependencies by running `pip install -r requirements.txt`.
 
 ## Experiments
+
+A list of experiments with result data and conclusions. 
 
 ---
 
@@ -40,6 +43,7 @@ python experiments/encrypted_object_size_experiment.py
 ```
 
 #### Results:
+
 On MacBook PRO, 2021, Intel processor, 16GB RAM, 1Gbps WiFi network.
 
 ```shell
@@ -61,6 +65,7 @@ KMS encrypt/decrypt operation (100 cycles) for big string (3600 length) took: 8.
 ```
 
 #### Results:
+
 On Lambda function, 10240 MB (~10GB) RAM.
 
 ```shell
@@ -82,6 +87,7 @@ KMS encrypt/decrypt operation (100 cycles) for big string (3600 length) took: 1.
 ```
 
 #### Results:
+
 On Lambda function, 128 MB RAM.
 
 ```shell
@@ -121,6 +127,7 @@ python experiments/single_operation_length_experiment.py
 ```
 
 #### Results:
+
 On MacBook PRO, 2021, Intel processor, 16GB RAM, 1Gbps WiFi network.
 
 ```shell
@@ -142,6 +149,7 @@ KMS decrypt operation on average took 0.03773927927017212 seconds.
 ```
 
 #### Results:
+
 On Lambda function, 10240 MB (~10GB) RAM.
 
 ```shell
@@ -163,6 +171,7 @@ KMS decrypt operation on average took 0.007810392379760742 seconds.
 ```
 
 #### Results:
+
 On Lambda function, 128 MB RAM.
 
 ```shell
